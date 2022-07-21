@@ -16,6 +16,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body class="container-fluid bg-dark">
+<div class="col mt-1">
+    <button type="button" class=" btn btn-primary float-right" onclick="document.location='/sms'">Home</button>
+</div>
     <div class="container text-white">
         <div class="col-12 mt-4">
             <h4><strong>Students List</strong></h4>
@@ -57,7 +60,7 @@
                                class = "btn btn-primary">Update</a>
 
                             <a th:href = "@{/sms/courses/registration/{id}(id=${student.id})}"
-                               class = "btn btn-danger">Register Courses</a>
+                               class = "btn btn-success">Register Courses</a>
 
                             <a th:href = "@{/sms/students/{id}(id=${student.id})}"
                                class = "btn btn-danger">Delete</a>
